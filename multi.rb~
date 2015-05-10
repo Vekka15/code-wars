@@ -1,0 +1,7 @@
+def solution(number)
+ sum=0
+ (1..number-1).to_a.each{|num| (num%3==0) ? sum=sum+num : (num%5==0 ? sum=sum+num : sum=sum)}
+ return sum
+end
+
+puts "#{solution(9)}"
